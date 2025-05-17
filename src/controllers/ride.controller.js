@@ -7,7 +7,7 @@ const redisClient = require("../utils/redisClient");
  * @returns {null} clear first page from cache whatever the limit is
  */
 const clearFirstPageRidesCache = async () => {
-  let cursor = "0"; // لازم String!
+  let cursor = "0";
 
   do {
     const results = await redisClient.scan(cursor, {
