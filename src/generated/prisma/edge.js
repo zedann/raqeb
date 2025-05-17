@@ -157,7 +157,7 @@ const config = {
       "value": "prisma-client-js"
     },
     "output": {
-      "value": "/Users/countzedan/projects/raqeb/src/generated/prisma",
+      "value": "/home/zedan/projects/raqeb/src/generated/prisma",
       "fromEnvVar": null
     },
     "config": {
@@ -166,12 +166,12 @@ const config = {
     "binaryTargets": [
       {
         "fromEnvVar": null,
-        "value": "darwin-arm64",
+        "value": "debian-openssl-3.0.x",
         "native": true
       }
     ],
     "previewFeatures": [],
-    "sourceFilePath": "/Users/countzedan/projects/raqeb/prisma/schema.prisma",
+    "sourceFilePath": "/home/zedan/projects/raqeb/prisma/schema.prisma",
     "isCustomOutput": true
   },
   "relativeEnvPaths": {
