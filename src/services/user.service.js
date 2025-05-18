@@ -10,3 +10,14 @@ const createUser = async (user) => {
     data: user,
   });
 };
+const getUsers = async ({ page, limit }) => {
+  const skip = (page - 1) * limit;
+  const users = await prisma.user.findMany({
+    skip,
+    take: limit,
+    include: {
+      ridesAsDriver: true,
+      ridesAsRider: true,
+    },
+  });
+};
