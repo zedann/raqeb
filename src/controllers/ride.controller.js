@@ -80,5 +80,6 @@ exports.getRides = handleAsync(async (req, res, next) => {
   res.status(HTTP_STATUS.OK).json({
     message: "fetched and cached for 30s",
     rides: ridesFromDB,
+    total: ridesFromDB.length,
   });
 });
